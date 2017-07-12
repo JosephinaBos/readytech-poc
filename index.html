@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title>Readytech Popup POC</title>
+    <title>ReadyTech Popup POC</title>
 </head>
 <body>
-    <h1 id="title">Readytech POC</h1>
+    <h1 id="title">ReadyTech POC</h1>
     <div class="footer" id="footer">
        <button class="basic-button" id="btn-request-session" data-toggle="modal" data-target="#surfly-session-modal"><p id="id-cover">Get help</p></button>
        <button class="basic-button" id="btn-end-session" onclick="sessionEnd()">End session</button>
@@ -45,8 +45,7 @@
 
         // Implement the Surfly init code, ADD YOUR OWN WIDGET KEY
         Surfly.init({
-            widget_key: '0c17c102b943457a82838fe64a5a0a0d'
-        }, function(init) {
+            widget_key: '0c17c102b943457a82838fe64a5a0a0d'}, function(init) {
             if (init.success) {
                 if (Surfly.currentSession) {
                     // Inside a session, show the btn-end-session
