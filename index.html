@@ -44,9 +44,10 @@
         Surfly.init({
             widget_key: '0c17c102b943457a82838fe64a5a0a0d'}, function(init) {
             if (init.success) {
-                if (!Surfly.currentSession) {
+                document.getElementById("btn-request-session").style.display = "block";
+                if (Surfly.currentSession) {
                     // Make sure the btn-request-session makes room for the session ID
-                    document.getElementById("btn-request-session").style.visibility = "block";
+                    document.getElementById("btn-request-session").style.display = "none";
                 }
             }
             //Make sure that once the session is ended, the correct session is removed from the active session list
