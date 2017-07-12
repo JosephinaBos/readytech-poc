@@ -39,6 +39,10 @@
     margin-top: 7px;
 }
 
+#btn-request-session {
+    display: none;
+}
+
 #surfly-session-modal {
     background: white;
     text-align: center;
