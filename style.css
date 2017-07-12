@@ -48,10 +48,10 @@
 }
 
 #surfly-session-modal {
-    background: #ffd05b;
+    background: white;
     text-align: center;
-    height: 450px;
-    width: 730px;
+    height: 340px;
+    width: 575px;
     border-radius: 7px;
     margin: 150px auto;
 }
@@ -77,8 +77,8 @@ h4 {
 }
 
 .modal-button {
-    background-color: #EBAA7C;
-    border: 1px solid #EBAA7C;
+    background-color: #ffd05b;
+    border: 1px solid #ffd05b;
     border-radius: 40px;
     width: 125px;
     height: 50px;
