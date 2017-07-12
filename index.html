@@ -5,16 +5,15 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title>ReadyTech Popup POC</title>
+    <title>Modal Dialog POC</title>
 </head>
 <body>
-    <h1 id="title">ReadyTech POC</h1>
+    <h1 id="title">Modal Dialog POC</h1>
     <div class="footer" id="footer">
        <button class="basic-button" id="btn-request-session" data-toggle="modal" data-target="#surfly-session-modal"><p id="id-cover">Get help</p></button>
-       <button class="basic-button" id="btn-end-session" onclick="sessionEnd()">End session</button>
     </div>
 
     <div id="surfly-session-modal" class="modal fade" role="dialog">
@@ -34,8 +33,6 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="bootstrap.js"></script>
     <script>
         //Add the Surfly snippet
         (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
@@ -108,12 +105,6 @@
             /* Add configuration calls below this comment */
             olark.identify('7117-431-10-1219');
             //UNTIL HERE
-        }
-
-        //Function that ends the session, so that it can be applied to the "end Session"-button
-
-        function sessionEnd() {
-            Surfly.currentSession.end();
         }
     </script>
 </body>

@@ -39,14 +39,6 @@
     margin-top: 7px;
 }
 
-#btn-end-session, #btn-end-queued-session {
-    display: none;
-}
-
-#btn-end-queued-session {
-    left: 175px;
-}
-
 #surfly-session-modal {
     background: white;
     text-align: center;
