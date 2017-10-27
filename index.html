@@ -13,7 +13,7 @@
 <body>
     <h1 id="title">Modal Dialog POC</h1>
     <div class="footer" id="footer">
-       <button class="basic-button" id="btn-request-session" data-toggle="modal" data-target="#surfly-session-modal"><p id="id-cover">Get help</p></button>
+       <button class="basic-button" id="btn-request-session" onclick="sessionStart()" data-toggle="modal" data-target="#surfly-session-modal"><p>Get help</p></button>
     </div>
 
     <div id="surfly-session-modal" class="modal fade" role="dialog">
@@ -22,13 +22,11 @@
                 <h4 class="surfly-modal-title">Co-browse Session Agreement</h4>
             </div>
             <div class="surfly-modal-body">
-                <p>A condition</p>
-                <p>Another condition</p>
-                <p>And another one</p>
+                 <p id="id-cover"></p>
             </div>
             <div class="surfly-modal-footer">
-                <button class="modal-button" id="btn-start-session" onclick="sessionStart()" data-dismiss="modal" aria-label="Close">Agree</button>
-                <button class="modal-button" id="btn-exit-modal" data-dismiss="modal" aria-label="Close">Cancel</button>
+                <!-- <button class="modal-button" id="btn-start-session" data-dismiss="modal" aria-label="Close">Agree</button> -->
+                <button class="modal-button" id="btn-exit-modal" onclick="Surfly.currentSession.end()" data-dismiss="modal" aria-label="Close">Cancel</button>
             </div>
         </div>
     </div>
