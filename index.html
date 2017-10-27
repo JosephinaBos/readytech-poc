@@ -84,7 +84,7 @@
                     console.log(session);
                     var showId = document.getElementById("btn-request-session");
                     showId.style.display = "block";
-                    showId.textContent = session._formattedID;
+                    showId.textContent = Surfly.listSessions()[0]._formattedId;
                 }).startLeader();
         }
 
