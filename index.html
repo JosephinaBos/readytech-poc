@@ -78,10 +78,10 @@
             // Code that shows the session-id so that it can be passed to the helpdesk agent
             Surfly.session(settings)
                 .on('session_started', function(session, event) {
-                    document.getElementById("id-cover").style.display = "none";
+                    // document.getElementById("id-cover").style.display = "none";
                     console.log(session);
-                    var showId = document.getElementById("btn-request-session");
-                    showId.style.display = "block";
+                    var showId = document.getElementById("id-cover");
+                    // showId.style.display = "block";
                     showId.textContent = Surfly.listSessions()[0]._formattedId;
                 }).startLeader();
         }
