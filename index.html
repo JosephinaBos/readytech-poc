@@ -26,7 +26,7 @@
             </div>
             <div class="surfly-modal-footer">
                 <!-- <button class="modal-button" id="btn-start-session" data-dismiss="modal" aria-label="Close">Agree</button> -->
-                <button class="modal-button" id="btn-exit-modal" onclick="Surfly.currentSession.end()" data-dismiss="modal" aria-label="Close">Cancel</button>
+                <button class="modal-button" id="btn-exit-modal" onclick="exitSession()" data-dismiss="modal" aria-label="Close">Cancel</button>
             </div>
         </div>
     </div>
@@ -147,6 +147,7 @@
                     console.log(session);
                     var showId = document.getElementById("id-cover");
                     showId.textContent = Surfly.listSessions()[0]._formattedId;
+                    document.getElementById("btn-request-session").style.display = "block";
                 }).startLeader();
         }
 
@@ -165,6 +166,10 @@
             /* Add configuration calls below this comment */
             olark.identify('7117-431-10-1219');
             //UNTIL HERE
+        }
+
+        function exitSession(){
+            Surfly.listSessions[0].end();
         }
     </script>
 </body>
